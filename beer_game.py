@@ -2,6 +2,7 @@ from beer_demand import *
 Inv=540
 out_stock_cost=100
 invnt_cost=0
+total_cost=0
 def banner(text, num):
     border = "%"
     line = border * 2*len(text)
@@ -18,11 +19,14 @@ for i in range(20):
     banner(msg,Inv) #printing the inventory for the retail manager to take the decision
     dmnd = get_demand(i)
     print("The demand for the inventory is:", dmnd)
+
     ordr=input("how many pallet you want to order? ")
     if not ordr:
-        invnt_cost = invnt_cost+Inv
-    else:
-        
+        total_cost = invnt_cost+Inv
+        print("the total cost is: ",total_cost)
+
+
+
 
 
 
