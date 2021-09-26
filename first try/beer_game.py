@@ -21,8 +21,9 @@ def banner(text, num):
     print(text,num)
     print(line)
     print(line, "\n")
+##### end of cosmetic code###########
 
-##main for loop that  will itrate for 20 weeks
+###  for loop that  will itrate for 20 weeks
 for i in range(1,21,1):
     for j in range(1,21,1):
         #print("flag_day is:",flag_day[j])
@@ -53,16 +54,16 @@ for i in range(1,21,1):
         #devicing a check to add the inv in the 3rd week
 
         flag_day[i+3]=val
-        for k in range(len(flag_day)):
-            print(flag_day[k])
+        #for k in range(len(flag_day)):
+            #print(flag_day[k])
 
 
         if Inv <0:
             total_cost_week[i] = order_cost+dmnd
             Inv = 0
         else:
-            total_cost_week[i] = Inv+order_cost+dmnd
-        print("********the order value is greater than 0****")
+            total_cost_week[i] = Inv+order_cost
+        #print("********the order value is greater than 0****")
 
 
         #print("\n\nThe total cost is: ",total_cost) #will delete this print,placed just for understanding
@@ -77,7 +78,7 @@ for i in range(1,21,1):
 
     cumm_cost=cumm_cost+total_cost_week[i]
     print("\n\nThe weekly cost: ",total_cost_week[i])
-    print("this is week: ",i)
+    print("This is week: ",i)
 
     print("\n\nThe total cost is: ", cumm_cost)  # will delete this print,placed just for understanding
     '''print('\n\nStarting Next week in 3 . . .\n')
@@ -88,13 +89,3 @@ for i in range(1,21,1):
     sleep(1)'''
     print("\nThis is E.O.W...")
     print("_______________________________________\n\n")
-
-
-
-
-
-
-
-
-
-
