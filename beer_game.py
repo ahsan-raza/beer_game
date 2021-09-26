@@ -4,7 +4,7 @@ from time import sleep
 Inv=540
 order_cost=100
 total_cost_week=[0] * 21
-flag_day=[0] * 21
+flag_day=[0] * 24
 cumm_cost=0
 out_stock_cost=0
 
@@ -32,7 +32,7 @@ for i in range(1,21,1):
                 print(i,j)
                 Inv = Inv + flag_day[j]
                 print("The supply is added to inventory, it was :", flag_day[j])
-                flag_day=[0] * 21
+                flag_day=[0] * 24
     msg= "The remaining inventory is:"
     banner(msg,Inv) #printing the inventory for the retail manager to take the decision
     dmnd = get_demand(i)  #getting the demand by beer_demand function
@@ -80,13 +80,14 @@ for i in range(1,21,1):
     print("this is week: ",i)
 
     print("\n\nThe total cost is: ", cumm_cost)  # will delete this print,placed just for understanding
-    print('\n\nStarting Next week in 3 . . .\n')
+    '''print('\n\nStarting Next week in 3 . . .\n')
     sleep(1)
     print('2 . . . \n')
     sleep(1)
     print('1 . . . \n')
-    sleep(1)
+    sleep(1)'''
     print("\nThis is E.O.W...")
+    print("_______________________________________\n\n")
 
 
 
