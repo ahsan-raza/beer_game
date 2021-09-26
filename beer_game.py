@@ -1,7 +1,7 @@
 from beer_demand import *
 from time import sleep
 
-Inv=100
+Inv=540
 order_cost=100
 total_cost_week=[0] * 21
 flag_day=[0] * 21
